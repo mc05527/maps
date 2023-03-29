@@ -1,10 +1,8 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
-import 'package:uuid/uuid.dart';
-import 'uuid/uuid.dart';
 import 'package:http/http.dart' as http;
+import 'package:uuid/uuid.dart';
 
 class GooglePlacesApiScreen extends StatefulWidget {
   const GooglePlacesApiScreen({Key? key}) : super(key: key);
@@ -15,7 +13,7 @@ class GooglePlacesApiScreen extends StatefulWidget {
 
 class _GooglePlacesApiScreenState extends State<GooglePlacesApiScreen> {
   TextEditingController _controller = TextEditingController();
-  var uuid = Uuid();
+  var uuid = const Uuid();
   String _sessionToken = '122344';
   List<dynamic> _placesList = [];
 
